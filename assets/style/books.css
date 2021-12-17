@@ -1,0 +1,116 @@
+#books {
+  margin-top: 189px;
+  margin-bottom: 189px;
+  padding-top: 80px;
+}
+
+#books .top_items .book_header {
+  font-weight: 400;
+  font-family: "Bona Nova", serif;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+#books .top_items .breadcrump {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+
+#books .top_items .breadcrump li a {
+  color: var(--title-color);
+  opacity: 0.5;
+  padding-left: 5px;
+}
+
+#books .book_items {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#books .book_items .book_item {
+  width: 31%;
+  cursor: pointer;
+}
+
+#books .book_items .book_item .book_img {
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+#books .book_items .book_item .book_img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#books .book_items .book_item .author {
+  font-size: clamp(12px, 2vw, 14px);
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--title-color);
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
+#books .book_items .book_item .text {
+  font-size: clamp(17px, 2vw, 24px);
+  margin-top: 8px;
+  line-height: clamp(24px, 2vw, 36px);
+  opacity: 0.7;
+  font-weight: 400;
+  font-family: "Gotham_Light", sans-serif;
+  color: var(--title-color);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#books .book_items .book_item:hover .text {
+  color: var(--gold-color);
+}
+
+#books .book_items .book_item:hover .book_img img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media (max-width: 944px) {
+  #books {
+    padding-top: 0px;
+  }
+  #books .top_items .book_header {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  #books .top_items .breadcrump {
+    display: none;
+  }
+  #books .book_items {
+    margin-top: 40px;
+    display: block;
+  }
+  #books .book_items .book_item {
+    width: 100%;
+    margin-top: 64px;
+  }
+  #books .book_items .book_item .book_img {
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+  #books .book_items .book_item .book_img img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+}
+/*# sourceMappingURL=books.css.map */

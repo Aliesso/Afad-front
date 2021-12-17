@@ -1,0 +1,83 @@
+#stend {
+  margin-top: 189px;
+  margin-bottom: 189px;
+  padding-top: 80px;
+}
+
+#stend .top_items .stend {
+  font-weight: 400;
+  font-family: "Bona Nova", serif;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+#stend .top_items .breadcrump {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+
+#stend .top_items .breadcrump li a {
+  color: var(--title-color);
+  opacity: 0.5;
+  padding-left: 5px;
+}
+
+#stend .stends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 6px solid var(--gold-color);
+  margin-top: 40px;
+}
+
+#stend .stends .stend {
+  overflow: hidden;
+}
+
+#stend .stends .stend img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#stend .stends .stend:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 944px) {
+  #stend {
+    padding-top: 0px;
+  }
+  #stend .top_items .stend {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  #stend .top_items .breadcrump {
+    display: none;
+  }
+  #stend .stends {
+    display: block;
+    border: unset;
+  }
+  #stend .stends .stend {
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  #stend .stends .stend img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  #stend .stends .stend:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+/*# sourceMappingURL=stend.css.map */

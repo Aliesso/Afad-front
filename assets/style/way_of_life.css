@@ -1,0 +1,105 @@
+#way_of_life {
+  margin-top: 189px;
+  margin-bottom: 189px;
+  padding-top: 80px;
+}
+
+#way_of_life .top_items .way_life {
+  font-weight: 400;
+  font-family: "Bona Nova", serif;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+#way_of_life .top_items .breadcrump {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+
+#way_of_life .top_items .breadcrump li a {
+  color: var(--title-color);
+  opacity: 0.5;
+  padding-left: 5px;
+}
+
+#way_of_life .way_of_life_items {
+  margin-top: 50px;
+}
+
+#way_of_life .way_of_life_items .way_of_life_item {
+  margin-bottom: 32px;
+}
+
+#way_of_life .way_of_life_items .way_of_life_item p {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 400;
+  color: var(--title-color);
+  opacity: 0.7;
+}
+
+#way_of_life .way_of_life_items .way_of_life_item p img {
+  width: 50%;
+  height: 50%;
+  float: right;
+  margin-left: 40px;
+}
+
+#way_of_life .way_of_life_items .way_of_life_item_2 {
+  margin-bottom: 32px;
+}
+
+#way_of_life .way_of_life_items .way_of_life_item_2 p {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 400;
+  color: var(--title-color);
+  opacity: 0.7;
+}
+
+#way_of_life .way_of_life_items .way_of_life_item_2 p img {
+  width: 50%;
+  height: 50%;
+  float: left;
+  margin-right: 40px;
+}
+
+#way_of_life .way_of_life_items .bottom_text {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 400;
+  color: var(--title-color);
+  opacity: 0.7;
+}
+
+@media (max-width: 944px) {
+  #way_of_life {
+    padding-top: 0px;
+  }
+  #way_of_life .top_items .way_life {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  #way_of_life .top_items .breadcrump {
+    display: none;
+  }
+  #way_of_life .way_of_life_items .way_of_life_item p img {
+    float: unset;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+  #way_of_life .way_of_life_items .way_of_life_item_2 p img {
+    float: unset;
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
+/*# sourceMappingURL=way_of_life.css.map */

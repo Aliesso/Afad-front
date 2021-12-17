@@ -1,0 +1,130 @@
+//********************** GALLERY SECTION ********************************//
+#gallery {
+  margin-top: 189px;
+  margin-bottom: 189px;
+  padding-top: 80px;
+  .top_items {
+    .gallery_text {
+      font-weight: 400;
+      font-family: "Bona Nova", serif;
+      font-size: 48px;
+      line-height: 58px;
+    }
+    .thum_list {
+      display: flex;
+      margin-top: 16px;
+      li {
+        a {
+          color: var(--title-color);
+          opacity: 0.5;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  .gallery_list {
+    display: flex;
+    margin: 40px 0 48px 0;
+    li {
+      margin-right: clamp(0px,2vw,40px);
+      padding: 16px 8px;
+      cursor: pointer;
+      &.active {
+        border-bottom: 1px solid var(--gold-color);
+      }
+      a {
+        color: var(--title-color);
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+        opacity: 0.8;
+      }
+    }
+  }
+  .gallery_items {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    .gallery_item {
+      position: relative;
+      width: 31%;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      height: auto;
+      img {
+        transition: 0.3s ease-in-out;
+        width: 100%;
+        height: 100%;
+      }
+      .gallery_text {
+        position: absolute;
+        bottom: 5%;
+        left: 2%;
+        right: 2%;
+        background-color: #91750dcc;
+        z-index: 5;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        p {
+          font-family: "Bona Nova", serif;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21px;
+          color: #fff;
+          padding: 24px 16px;
+          text-align: center;
+          opacity: 0.8;
+        }
+      }
+      &:hover {
+        
+          img {
+            transform: scale(1.05);
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--title-color);
+            opacity: 0.4;
+          }
+        
+        .gallery_text {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 944px) {
+  #gallery {
+    .top_items {
+      .gallery_text {
+        text-align: center;
+      }
+      .thum_list {
+        display: none;
+      }
+      
+    }
+    .gallery_list{
+      overflow-x: auto;
+        white-space: nowrap;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+    }
+    .gallery_items{
+      display: block;
+      
+      .gallery_item{
+        margin: 8px 0;
+        width: 100%;
+      }
+    }
+  }
+}

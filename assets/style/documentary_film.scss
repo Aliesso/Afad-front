@@ -1,0 +1,111 @@
+#documentary_film {
+  margin-top: 189px;
+  margin-bottom: 189px;
+  padding-top: 80px;
+  .top_items {
+    .documentary {
+      font-weight: 400;
+      font-family: "Bona Nova", serif;
+      font-size: 48px;
+      line-height: 58px;
+    }
+    .breadcrump {
+      display: flex;
+      margin-top: 16px;
+      li {
+        a {
+          color: var(--title-color);
+          opacity: 0.5;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  .documentary_slider_mobile {
+    display: none;
+  }
+  .documentary_slider {
+    margin-top: 40px;
+    white-space: nowrap;
+
+
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      .swiper-slide {
+        text-align: start;
+        font-size: 18px;
+        background: #fff;
+
+        .documentary_film {
+          width: 100%; 
+          height: 468px;
+          position: relative;
+          svg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+          }
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+//Light Slider
+body > div.lg-outer.lg-start-zoom.lg-use-css3.lg-css3.lg-slide.lg-grab.lg-show-after-load.lg-pull-caption-up.lg-has-thumb.lg-can-toggle.lg-use-transition-for-zoom.lg-visible.lg-thumb-open.lg-hide-download > div > div.lg-toolbar.lg-group > button.lg-rotate-right.lg-icon,
+body > div.lg-outer.lg-start-zoom.lg-use-css3.lg-css3.lg-slide.lg-grab.lg-show-after-load.lg-pull-caption-up.lg-has-thumb.lg-can-toggle.lg-use-transition-for-zoom.lg-visible.lg-thumb-open.lg-hide-download > div > div.lg-toolbar.lg-group > button.lg-rotate-left.lg-icon,
+body > div.lg-outer.lg-start-zoom.lg-use-css3.lg-css3.lg-slide.lg-grab.lg-show-after-load.lg-pull-caption-up.lg-has-thumb.lg-can-toggle.lg-use-transition-for-zoom.lg-visible.lg-thumb-open.lg-hide-download > div > div.lg-toolbar.lg-group > button.lg-flip-hor.lg-icon,
+body > div.lg-outer.lg-start-zoom.lg-use-css3.lg-css3.lg-slide.lg-grab.lg-show-after-load.lg-pull-caption-up.lg-has-thumb.lg-can-toggle.lg-use-transition-for-zoom.lg-hide-download.lg-visible.lg-thumb-open > div > div.lg-toolbar.lg-group > button.lg-flip-ver.lg-icon,
+#lg-actual-size,
+#lg-zoom-out,
+#lg-zoom-in
+{
+  display: none;
+}
+
+
+@media (max-width: 944px) {
+  #documentary_film {
+    padding-top: 0px;
+    .top_items {
+      .documentary {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 28px;
+        line-height: 33px;
+      }
+      .breadcrump {
+        display: none;
+      }
+    }
+    .documentary_slider_mobile {
+      display: block;
+      .documentary_items {
+        margin-top: 64px;
+        .documentary_film {
+          margin-bottom: 40px;
+          position: relative;
+          svg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+          }
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .documentary_slider {
+      display: none;
+    }
+  }
+}
