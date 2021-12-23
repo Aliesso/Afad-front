@@ -11,10 +11,10 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2.4,
     },
   },
-  //  autoplay:{
-  //    delay: 2500
-  //  },
-  // loop: true,
+   autoplay:{
+     delay: 2500
+   },
+
 });
 
 

@@ -125,12 +125,20 @@
             border: 1px solid var(--gold-color);
             padding: 5px;
           }
+          .selected{
+            img{
+              transform: rotate(180deg);
+            }
+          }
         }
         .selected {
           position: relative;
           display: flex;
           span {
             margin-right: 10px;
+          }
+          img{
+            transition: .3s ease-in-out;
           }
         }
         .dropDown {
@@ -177,24 +185,27 @@
               opacity: 0.6;
               font-weight: normal;
               font-style: normal;
-              
             }
-            &::after{
-              content: '';
+            &:last-child {
+              &::after {
+                background-color: transparent;
+              }
+            }
+            &::after {
+              content: "";
               position: absolute;
               right: 5px;
               top: 50%;
               transform: translateY(-50%);
               height: 25px;
-              width: 2px;
-              background-color: rgba(255, 255, 255, 0.3);            
-              }
+              width: 1px;
+              background-color: rgba(255, 255, 255, 0.1);
+            }
             &:hover {
               a {
                 color: var(--gold-color);
               }
             }
-           
           }
           li:last-child {
             padding-right: 0;
@@ -222,8 +233,43 @@
         .mobile_menu {
           display: block;
           flex: 1;
-          .icon {
+          // .hamburger {
+          //   cursor: pointer;
+          // }
+          .custom_hamburger {
+            position: relative;
+            width: 26px;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
             cursor: pointer;
+            span {
+              width: 100%;
+              height: 2px;
+              background-color: #fff;
+              transition: .3s ease-in-out;
+              &:nth-child(2) {
+                width: 16px;
+                transition: .3s ease-in-out;
+              }
+            }
+            &.active {
+              span{
+                &:nth-child(2){
+                  opacity: 0;
+                  transform: translateX(-5px);
+                }
+                &:first-child{
+                  transform: rotate(45deg);
+                  margin-top: 10px;
+                }
+                &:last-child{
+                  transform: rotate(-45deg);
+                  margin-bottom: 9px;
+                }
+              }
+            }
           }
         }
         .logo {
@@ -318,18 +364,18 @@
         &.droppedItem {
           display: block;
           // padding: 20px 0 0 0;
-          border-bottom: 2px solid  rgba(255, 255, 255, 0.1);
+          border-bottom: 2px solid rgba(255, 255, 255, 0.1);
           max-height: 60px;
           padding: 20px 0;
           overflow: hidden;
           transition: 0.3s ease-in-out;
-          a{
+          a {
             cursor: context-menu;
           }
           &.active {
             max-height: 520px;
-            .dropLink{
-              svg{
+            .dropLink {
+              svg {
                 transform: rotate(180deg);
               }
             }
@@ -338,16 +384,18 @@
             display: flex;
             justify-content: space-between;
             cursor: pointer;
-            
+
             span {
               color: #ffffff;
               font-size: 16px;
               font-weight: 400;
               line-height: 20px;
+              pointer-events: none;
               opacity: 0.7;
             }
-            svg{
-             transition: .3s ease-in-out;
+            svg {
+              transition: 0.3s ease-in-out;
+              pointer-events: none;
             }
           }
 
@@ -366,7 +414,6 @@
               }
             }
           }
-         
         }
       }
     }

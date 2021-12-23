@@ -29,10 +29,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   //Mobile DropDown
-  const dropedItem = document.querySelector(".droppedItem"),
-    dropedMenu = document.querySelector(".droppedMenu"),
-    svgRotate = document.querySelectorAll(".dropLink svg");
-    dropLink = document.querySelectorAll(".dropLink");
+  const dropLink = document.querySelectorAll(".dropLink");
 
   dropLink.forEach((item) => {
     item.addEventListener("click", (e) => {
@@ -42,12 +39,13 @@ window.addEventListener("DOMContentLoaded", () => {
   });
   //*******************HAMBURGER JS*************************//
   const hamburger = () => {
-    const mobile_logo = document.querySelector(".hamburger"),
+    const mobile_logo = document.querySelector(".custom_hamburger"),
       mobile_menu = document.querySelector(".mobile_items");
 
     mobile_logo.addEventListener("click", (e) => {
       e.stopPropagation();
       mobile_menu.classList.toggle("active");
+      mobile_logo.classList.toggle("active");
     });
 
     mobile_menu.addEventListener("click", (e) => {
@@ -56,7 +54,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("click", () => {
       mobile_menu.classList.remove("active");
+      mobile_logo.classList.remove("active")
     });
   };
   hamburger();
 });
+
+

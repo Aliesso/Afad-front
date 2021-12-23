@@ -4,6 +4,13 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2.9,
   spaceBetween: 10,
   disableOnInteraction: true,
+  // effect: 'fade',
+  // fadeEffect: {
+  //   crossFade: true,
+    
+  // },
+  
+  slidesPerGroup: 3,
   breakpoints: {
     0: {
       slidesPerView: 2,

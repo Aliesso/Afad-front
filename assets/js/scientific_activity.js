@@ -5,15 +5,15 @@ const tabLinks = [
     subtitle: [
       {
         id: 10,
-        name: "1elmi fealliyet",
+        name: "Müasir Azərbaycan ədəbi dili",
       },
       {
         id: 11,
-        name: "2elmi fealliyet",
+        name: "Bədii əsərlərin dili",
       },
       {
         id: 12,
-        name: "3elmi fealliyet",
+        name: "Nitq mədəniyyəti",
       },
     ],
   },
@@ -136,7 +136,6 @@ const tabViews = [
 
 const scientificList = document.querySelector(".scientific_list"),
   scientificText = document.querySelector(".scientific_text"),
-  gallery_tabbarItem = document.querySelectorAll(".gallery_tabbarItem"),
   droppedMenu = document.querySelector(".scientific_list .droppedMenu");
 
 function hideScientific() {
@@ -181,12 +180,12 @@ tabLinks.map((item) => {
                   .map(
                     (
                       subItem
-                    ) => `<li id='${subItem.id}'><a href="singleBook.html">${subItem.name}</a>
-                  <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.5 8.16663L21.5 8.16663" stroke="#A58921" stroke-width="1.6" stroke-linecap="square"/>
-                  <path d="M17.5 3.5L22.1667 8.16667L17.5 12.8333" stroke="#A58921" stroke-width="1.6" stroke-linecap="square"/>
-                  </svg>
-                  </li>`
+                    ) => `<a href="singleBook.html"><li id='${subItem.id}'><span>${subItem.name}</span>
+                    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 8.16663L21.5 8.16663" stroke="#A58921" stroke-width="1.6" stroke-linecap="square"/>
+                    <path d="M17.5 3.5L22.1667 8.16667L17.5 12.8333" stroke="#A58921" stroke-width="1.6" stroke-linecap="square"/>
+                    </svg>
+                    </li></a>`
                   )
                   .join("")}
                 </ul>
@@ -210,6 +209,7 @@ tabLinks.map((item) => {
       element.addEventListener("click", (e) => {
         [...el.children].forEach((item) => {
           item.classList.remove("active");
+
         });
         e.currentTarget.classList.add("active");
         e.stopPropagation();

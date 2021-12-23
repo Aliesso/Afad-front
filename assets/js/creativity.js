@@ -60,27 +60,32 @@
       id: 4,
       content:
         "4Müasir Azərbaycan dilçiliyi hazırkı inkişaf səviyyəsinə  birdən-birə gəlib çıxmamışdır. O, mürəkkəb və çətin bir yol  keçmişdir. Bu sahədə ədəbiyyat və mədəniyyət xadimlərimiz  misilsiz xidmətlər göstərmişlər. Azərbaycanda peşəkar dilçilər  yetişənə qədər dilçilik tədqiqatları ilə müqtədir  sənətkarlarımız, şair və tərcüməçilərimiz, dramaturq,  ədəbiyyatşünas, tarixçilərimiz, publisist və pedaqoqlarımız,  müəllimlərimiz məşğul olmuşlar. Dilçiliyin bir elm sahəsi kimi  yaranmağa başlaması, əsasən, XIX yüzilliyə təsadüf edir,  formalaşması isə XX əsrlə bağlıdır. Bu dövrdən və XX əsrin  əvvəllərindən bəhs edərkən",
-    },
+        img: "assets/images/creativity/creativity_image.png",
+      },
     {
       id: 5,
       content:
         "5Müasir Azərbaycan dilçiliyi hazırkı inkişaf səviyyəsinə  birdən-birə gəlib çıxmamışdır. O, mürəkkəb və çətin bir yol  keçmişdir. Bu sahədə ədəbiyyat və mədəniyyət xadimlərimiz  misilsiz xidmətlər göstərmişlər. Azərbaycanda peşəkar dilçilər  yetişənə qədər dilçilik tədqiqatları ilə müqtədir  sənətkarlarımız, şair və tərcüməçilərimiz, dramaturq,  ədəbiyyatşünas, tarixçilərimiz, publisist və pedaqoqlarımız,  müəllimlərimiz məşğul olmuşlar. Dilçiliyin bir elm sahəsi kimi  yaranmağa başlaması, əsasən, XIX yüzilliyə təsadüf edir,  formalaşması isə XX əsrlə bağlıdır. Bu dövrdən və XX əsrin  əvvəllərindən bəhs edərkən",
-    },
+      img: "assets/images/creativity/creativity_image.png",
+      },
     {
       id: 6,
       content:
         "6Müasir Azərbaycan dilçiliyi hazırkı inkişaf səviyyəsinə  birdən-birə gəlib çıxmamışdır. O, mürəkkəb və çətin bir yol  keçmişdir. Bu sahədə ədəbiyyat və mədəniyyət xadimlərimiz  misilsiz xidmətlər göstərmişlər. Azərbaycanda peşəkar dilçilər  yetişənə qədər dilçilik tədqiqatları ilə müqtədir  sənətkarlarımız, şair və tərcüməçilərimiz, dramaturq,  ədəbiyyatşünas, tarixçilərimiz, publisist və pedaqoqlarımız,  müəllimlərimiz məşğul olmuşlar. Dilçiliyin bir elm sahəsi kimi  yaranmağa başlaması, əsasən, XIX yüzilliyə təsadüf edir,  formalaşması isə XX əsrlə bağlıdır. Bu dövrdən və XX əsrin  əvvəllərindən bəhs edərkən",
-    },
+        img: "assets/images/creativity/creativity_image.png",
+      },
     {
       id: 7,
       content:
         "7Müasir Azərbaycan dilçiliyi hazırkı inkişaf səviyyəsinə  birdən-birə gəlib çıxmamışdır. O, mürəkkəb və çətin bir yol  keçmişdir. Bu sahədə ədəbiyyat və mədəniyyət xadimlərimiz  misilsiz xidmətlər göstərmişlər. Azərbaycanda peşəkar dilçilər  yetişənə qədər dilçilik tədqiqatları ilə müqtədir  sənətkarlarımız, şair və tərcüməçilərimiz, dramaturq,  ədəbiyyatşünas, tarixçilərimiz, publisist və pedaqoqlarımız,  müəllimlərimiz məşğul olmuşlar. Dilçiliyin bir elm sahəsi kimi  yaranmağa başlaması, əsasən, XIX yüzilliyə təsadüf edir,  formalaşması isə XX əsrlə bağlıdır. Bu dövrdən və XX əsrin  əvvəllərindən bəhs edərkən",
-    },
+        img: "assets/images/creativity/creativity_image.png",
+      },
     {
       id: 8,
       content:
         "8Müasir Azərbaycan dilçiliyi hazırkı inkişaf səviyyəsinə  birdən-birə gəlib çıxmamışdır. O, mürəkkəb və çətin bir yol  keçmişdir. Bu sahədə ədəbiyyat və mədəniyyət xadimlərimiz  misilsiz xidmətlər göstərmişlər. Azərbaycanda peşəkar dilçilər  yetişənə qədər dilçilik tədqiqatları ilə müqtədir  sənətkarlarımız, şair və tərcüməçilərimiz, dramaturq,  ədəbiyyatşünas, tarixçilərimiz, publisist və pedaqoqlarımız,  müəllimlərimiz məşğul olmuşlar. Dilçiliyin bir elm sahəsi kimi  yaranmağa başlaması, əsasən, XIX yüzilliyə təsadüf edir,  formalaşması isə XX əsrlə bağlıdır. Bu dövrdən və XX əsrin  əvvəllərindən bəhs edərkən",
-    },
+        img: "assets/images/creativity/creativity_image.png",
+      },
   ];
 
   const creativity_text = document.querySelectorAll(".creativity_text");
